@@ -1,0 +1,57 @@
+<!-- index.html - Pictionary colaborativo -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Pictionary en tiempo real</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <div class="game-header">
+                <div id="user-info" class="user-info">Tu usuario: <span id="user-name">...</span></div>
+                <div id="word"><span class="word-label">Palabra:</span> <span id="current-word">...</span></div>
+                <div class="timer" id="timer">Tiempo: 60s</div>
+            </div>
+            <div class="canvas-wrapper">
+                <canvas id="board" width="800" height="500"></canvas>
+            </div>
+            <div class="draw-tools">
+                <div class="tool-picker" id="tool-picker">
+                    <button class="tool-btn selected" data-tool="pencil">Lápiz</button>
+                    <button class="tool-btn" data-tool="circle">Círculo</button>
+                    <button class="tool-btn" data-tool="square">Cuadrado</button>
+                    <button class="tool-btn" data-tool="triangle">Triángulo</button>
+                </div>
+                <div class="color-picker" id="color-picker">
+                    <button class="color-btn selected" style="background:#222" data-color="#222"></button>
+                    <button class="color-btn" style="background:#e74c3c" data-color="#e74c3c"></button>
+                    <button class="color-btn" style="background:#2a7ae2" data-color="#2a7ae2"></button>
+                    <button class="color-btn" style="background:#27ae60" data-color="#27ae60"></button>
+                    <button class="color-btn" style="background:#f1c40f" data-color="#f1c40f"></button>
+                </div>
+            </div>
+        </div>
+        <div class="right-panel">
+            <div class="card" id="users">
+                <h3>Jugadores conectados</h3>
+                <ul id="users-list"></ul>
+            </div>
+            <div class="card chat-card">
+                <div id="chat"></div>
+                <div id="chat-input">
+                    <input type="text" id="msg" placeholder="Escribe un mensaje...">
+                    <button id="send-btn">Enviar</button>
+                </div>
+            </div>
+            <div class="card btn-card">
+                <button id="connect-btn">Conectar</button>
+                <button id="disconnect-btn" style="display:none;">Desconectar</button>
+            </div>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

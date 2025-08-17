@@ -1,0 +1,297 @@
+.user-info {
+    font-size: 1.1rem;
+    color: #27ae60;
+    font-weight: 600;
+    margin-bottom: 8px;
+    background: #eaf1fb;
+    border-radius: 8px;
+    padding: 6px 18px;
+    box-shadow: 0 1px 4px rgba(39,174,96,0.08);
+    letter-spacing: 1px;
+    text-align: center;
+}
+.draw-tools {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    margin-bottom: 18px;
+    width: 100%;
+    justify-content: center;
+}
+.tool-picker {
+    display: flex;
+    gap: 10px;
+}
+.tool-btn {
+    background: #f4f8fb;
+    border: 2px solid #2a7ae2;
+    color: #2a7ae2;
+    border-radius: 8px;
+    padding: 7px 18px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.2s, color 0.2s, border 0.2s;
+}
+.tool-btn.selected {
+    background: #2a7ae2;
+    color: #fff;
+    border: 2px solid #1a5bb8;
+    box-shadow: 0 0 8px #2a7ae233;
+}
+/* styles.css - Estilo moderno para Pictionary */
+body {
+    background: linear-gradient(135deg, #f8fafc 0%, #a7c7e7 100%);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    color: #222;
+}
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+    padding: 32px 24px;
+    display: flex;
+    gap: 32px;
+}
+.left-panel {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.right-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+#word {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 18px;
+    color: #2a7ae2;
+}
+body {
+    background: linear-gradient(120deg, #e0eafc 0%, #c2e9fb 100%);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    color: #222;
+}
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.13);
+    padding: 36px 28px;
+    display: flex;
+    gap: 36px;
+}
+.left-panel {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.right-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+.game-header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 18px;
+}
+.word-label {
+    color: #2a7ae2;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-right: 8px;
+}
+#word {
+    font-size: 2.1rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #2a7ae2;
+    letter-spacing: 1px;
+}
+.timer {
+    font-size: 1.3rem;
+    color: #e67e22;
+    margin-bottom: 8px;
+    font-weight: bold;
+    background: #fff6e3;
+    border-radius: 8px;
+    padding: 4px 16px;
+    box-shadow: 0 1px 4px rgba(230,126,34,0.08);
+}
+.canvas-wrapper {
+    width: 820px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f4f8fb;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(42,122,226,0.08);
+    margin-bottom: 18px;
+    padding: 10px;
+}
+#board {
+    border: 3px solid #2a7ae2;
+    border-radius: 12px;
+    background: #f4f8fb;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 2px 12px rgba(42,122,226,0.08);
+}
+.color-picker {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 18px;
+    background: #eaf1fb;
+    border-radius: 10px;
+    padding: 8px 16px;
+    box-shadow: 0 1px 6px rgba(42,122,226,0.06);
+}
+.color-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    cursor: pointer;
+    outline: none;
+    transition: border 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+.color-btn.selected {
+    border: 3px solid #2a7ae2;
+    box-shadow: 0 0 8px #2a7ae233;
+}
+#eraser-btn {
+    border: 2px solid #e74c3c !important;
+    color: #e74c3c;
+    font-weight: bold;
+    background: #fff !important;
+}
+#thickness-input {
+    width: 90px;
+    margin-left: 8px;
+}
+label[for="thickness-input"], label {
+    font-size: 1rem;
+    margin-left: 10px;
+    color: #2a7ae2;
+}
+.card {
+    background: #f8fafc;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(42,122,226,0.07);
+    padding: 18px 16px;
+    margin-bottom: 8px;
+}
+.chat-card {
+    padding-bottom: 8px;
+}
+#chat {
+    background: #f4f8fb;
+    border-radius: 10px;
+    padding: 12px;
+    height: 220px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    box-shadow: 0 1px 4px rgba(42,122,226,0.06);
+}
+#chat-input {
+    display: flex;
+    gap: 8px;
+}
+#chat-input input {
+    flex: 1;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #bbb;
+    font-size: 1rem;
+    background: #fff;
+    box-shadow: 0 1px 2px rgba(42,122,226,0.04);
+}
+#chat-input button {
+    background: #2a7ae2;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+    box-shadow: 0 1px 4px rgba(42,122,226,0.08);
+}
+#chat-input button:hover {
+    background: #1a5bb8;
+}
+#users {
+    background: #eaf1fb;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 1px 4px rgba(42,122,226,0.06);
+}
+#users h3 {
+    margin: 0 0 8px 0;
+    font-size: 1.1rem;
+    color: #2a7ae2;
+}
+#users-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#users-list li {
+    padding: 4px 0;
+    font-size: 1rem;
+}
+.btn-card {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    box-shadow: none;
+    padding: 0;
+}
+#connect-btn, #disconnect-btn {
+    background: #2a7ae2;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 22px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-right: 0;
+    margin-bottom: 0;
+    transition: background 0.2s, box-shadow 0.2s;
+    box-shadow: 0 1px 6px rgba(42,122,226,0.10);
+}
+#disconnect-btn {
+    background: #e74c3c;
+}
+#connect-btn:hover {
+    background: #1a5bb8;
+    box-shadow: 0 2px 12px #2a7ae233;
+}
+#disconnect-btn:hover {
+    background: #c0392b;
+    box-shadow: 0 2px 12px #e74c3c33;
+}
